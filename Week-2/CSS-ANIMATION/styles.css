@@ -1,0 +1,61 @@
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h2 {
+  position: absolute;
+  z-index: -1;
+}
+
+.container {
+  height: 200px;
+  width: 200px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.red,.blue,.yellow,.green {
+  width: 100px;
+  height: 100px;
+  transition-property: transform;
+  transition-duration: 1s;
+}
+
+.container:hover .red {
+  transform: rotate(90deg);
+}
+
+.container:hover .blue {
+  transform: rotate(-90deg);
+}
+
+.container:hover .yellow {
+  transform: rotate(-90deg);
+}
+
+.container:hover .green {
+  transform: rotate(90deg);
+}
+
+.red {
+  background-color: red;
+  transform-origin: top left;
+}
+
+.yellow {
+  background-color: yellow;
+  transform-origin: top right;
+}
+
+.blue {
+  background-color: blue;
+  transform-origin: bottom left;
+}
+
+.green {
+  background-color: green;
+  transform-origin: bottom right;
+}
